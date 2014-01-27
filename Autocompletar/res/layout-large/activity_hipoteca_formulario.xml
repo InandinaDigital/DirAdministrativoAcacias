@@ -1,0 +1,553 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".HipotecaFormulario"
+   
+    android:background="@drawable/fondo_app_cont2" >
+ 
+   <LinearLayout
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:orientation="vertical"
+        android:layout_marginTop="20dp"
+    android:layout_marginLeft="110dp"
+
+       android:padding="10dp" >
+ 
+       <TextView
+           android:id="@+id/label_nombre"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/label_nombre_hipoteca"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00"
+           android:textSize="35dp" />
+    
+       <TextView
+           android:id="@+id/nombre"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10" 
+           android:textSize="35dp"
+           android:background="@android:color/transparent"
+          />
+    
+       <TextView
+           android:id="@+id/label_Secretaria"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Secretaria"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00"
+           />
+        
+       <TextView
+           android:id="@+id/secretaria"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+       
+        
+       <TextView
+           android:id="@+id/label_Oficina"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Oficina"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00"
+            />
+        
+       <TextView
+           android:id="@+id/oficina"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:background="@android:color/transparent"/>
+       
+       
+       <TextView
+           android:id="@+id/label_direccion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Dirección"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00"
+            />
+        
+       <TextView
+           android:id="@+id/direccion"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:background="@android:color/transparent"/>
+        
+       <TextView
+           android:id="@+id/label_cargo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Cargo"
+           android:textSize="35dp"
+           android:textColor="#FF6A00"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+        
+       <TextView
+           android:id="@+id/cargo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="phone"
+           android:background="@android:color/transparent" />
+       
+       <TextView
+           android:id="@+id/label_profesion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Profesión"
+           android:textSize="35dp"
+           android:textColor="#FF6A00"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+        
+       <TextView
+           android:id="@+id/profesion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:background="@android:color/transparent" /> 
+           
+       
+       
+       
+       
+        <TextView
+           android:id="@+id/label_descripcion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Descripción del Cargo"
+           android:textSize="35dp"
+           android:textColor="#FF6A00"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+        />
+        
+       <TextView
+           android:id="@+id/decripcion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:background="@android:color/transparent" />
+       
+       
+       
+       <TextView
+           android:id="@+id/label_modalidad"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Modalidad"
+           android:textSize="35dp"
+           android:textColor="#FF6A00"
+           android:textAppearance="?android:attr/textAppearanceMedium" />
+       
+        
+      <TextView
+           android:id="@+id/modalidad"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textEmailAddress"
+           android:background="@android:color/transparent"/>
+      
+       <TextView
+           android:id="@+id/label_tramite"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Tramites o Servicios"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+       <TextView
+           android:id="@+id/tramite"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+ 
+      <TextView
+           android:id="@+id/label_email"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="E-mail"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+       <TextView
+           android:id="@+id/email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+       
+       
+       
+        <TextView
+           android:id="@+id/label_twitter"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Twitter"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+       <TextView
+           android:id="@+id/twitter"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+       
+       
+        <TextView
+           android:id="@+id/label_facebook"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Facebook"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00" />
+        
+       <TextView
+           android:id="@+id/facebook"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+     
+       
+       
+        <TextView
+           android:id="@+id/label_youtube"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Youtube"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00"/>
+        
+       <TextView
+           android:id="@+id/youtube"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+       
+       
+       <TextView
+           android:id="@+id/label_paginaweb"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Pagina Web"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+       <TextView
+           android:id="@+id/paginaweb"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+   
+       
+        <TextView
+           android:id="@+id/label_celular"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Celular"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/celular"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+         <TextView
+           android:id="@+id/label_whatsapp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="WhatsApp"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/whatsapp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+
+      
+      
+      
+      <TextView
+           android:id="@+id/label_tel_fijo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Teléfono Fijo"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/tel_fijo"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+      
+       <TextView
+           android:id="@+id/label_extension"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Extensión"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/extension"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+       <TextView
+           android:id="@+id/label_linea"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Línea"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/linea"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+      
+      <TextView
+           android:id="@+id/label_publico"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Atención al público"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/publico"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      <TextView
+           android:id="@+id/label_atencion"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Horario de Atención"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/atencion"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+        <TextView
+           android:id="@+id/label_jefe"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Jefe Inmediato"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/jefe"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+       <TextView
+           android:id="@+id/label_jefe_correo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Correo Jefe Inmediato"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/jefe_correo"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+      <TextView
+           android:id="@+id/label_pqr"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enlace a PQR del Sitio Web"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/pqr"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+       <TextView
+           android:id="@+id/label_chat"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Enlace a Chat del Sitio Web"
+           android:textSize="35dp"
+           android:textAppearance="?android:attr/textAppearanceMedium" 
+           android:textColor="#FF6A00"/>
+        
+      <TextView
+           android:id="@+id/chat"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:textSize="35dp"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+      
+      
+      
+       
+        <TextView
+           android:id="@+id/label_etiqueta"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Etiqueta"
+           android:visibility="invisible"
+           android:textAppearance="?android:attr/textAppearanceMedium"
+           android:textColor="#FF6A00" />
+        
+       <TextView
+           android:id="@+id/etiqueta"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:ems="10"
+           android:visibility="invisible"
+           android:inputType="textMultiLine"
+           android:background="@android:color/transparent"/>
+    
+       
+       <LinearLayout
+            android:id="@+id/botonera"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal" 
+            >
+
+            <Button
+                android:id="@+id/boton_cancelar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_cancelar"
+                android:visibility="invisible" />
+
+            <Button
+                android:id="@+id/boton_guardar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/boton_guardar" 
+                android:visibility="invisible" />
+            
+           
+        </LinearLayout>
+        
+   </LinearLayout>
+</ScrollView>

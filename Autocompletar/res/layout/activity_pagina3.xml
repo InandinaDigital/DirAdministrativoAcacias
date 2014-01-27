@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Pagina3"
+    android:background="@drawable/fondo_app_cont2" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="240dp"
+        android:layout_height="320dp" 
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="50dp" > 
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Martín Dario Vega Marquez"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView1"
+                android:layout_below="@+id/textView1"
+                android:layout_marginTop="14dp"
+                android:text="-Secretaria:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView3"
+                android:layout_alignBottom="@+id/textView3"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/textView3"
+                android:text="Administrativa y Financiera" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView3"
+                android:layout_below="@+id/textView3"
+                android:layout_marginTop="19dp"
+                android:text="-Oficina: "
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView4"
+                android:layout_alignBottom="@+id/textView4"
+                android:layout_alignLeft="@+id/textView2"
+                android:text="Acacías Vive Digital " />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView4"
+                android:layout_below="@+id/textView4"
+                android:layout_marginTop="23dp"
+                android:text="-Cargo: "
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView6"
+                android:layout_alignBottom="@+id/textView6"
+                android:layout_alignLeft="@+id/textView5"
+                android:text="CIO" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_marginTop="18dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:text="-Modalidad"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView8"
+                android:layout_alignBottom="@+id/textView8"
+                android:layout_alignLeft="@+id/textView7"
+                android:text="Contrato Prestacion de Servicios" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView9"
+                android:layout_marginTop="26dp"
+                android:layout_toLeftOf="@+id/textView2"
+                android:text="-Etiquetas: "
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView10"
+                android:layout_alignBottom="@+id/textView10"
+                android:layout_alignLeft="@+id/textView9"
+                android:text="TIC, Internet, Digital, Tecnologia, Acacías Vive Digital" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_below="@+id/textView11"
+                android:layout_marginTop="23dp"
+                android:text="-Email:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView12"
+                android:layout_alignLeft="@+id/textView11"
+                android:text="cio@acacias-meta.gov.co" />
+
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/textView4"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="27dp"
+                android:text="-Twitter:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView14"
+                android:layout_alignBottom="@+id/textView14"
+                android:layout_alignLeft="@+id/textView13"
+                android:text="&apos;@MartinVegaM&apos;" />
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView8"
+                android:layout_below="@+id/textView14"
+                android:layout_marginTop="22dp"
+                android:text="-Facebook:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textView16"
+                android:layout_alignLeft="@+id/textView15"
+                android:text="llanerodigital" />
+
+            <TextView
+                android:id="@+id/textView18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView14"
+                android:layout_below="@+id/textView16"
+                android:layout_marginTop="17dp"
+                android:text="-Youtube:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView18"
+                android:layout_alignBottom="@+id/textView18"
+                android:layout_alignLeft="@+id/textView17"
+                android:text="llanerodigital" />
+
+            <TextView
+                android:id="@+id/textView20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView18"
+                android:layout_below="@+id/textView18"
+                android:layout_marginTop="15dp"
+                android:text="-Página web:"
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView20"
+                android:layout_alignBottom="@+id/textView20"
+                android:layout_alignLeft="@+id/textView19"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textView20"
+                android:layout_below="@+id/textView20"
+                android:layout_marginTop="24dp"
+                android:text="-Celular: "
+                android:textColor="#FF6A00" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textView22"
+                android:layout_alignBottom="@+id/textView22"
+                android:layout_alignLeft="@+id/textView21"
+                android:text="" />
+        </LinearLayout>
+    </ScrollView>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="50dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/scrollView1"
+        android:layout_toRightOf="@+id/scrollView1"
+        android:background="@android:color/transparent"
+        android:src="@drawable/flecha" />
+
+</RelativeLayout>

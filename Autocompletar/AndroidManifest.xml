@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.andres.u.ing.autocompletar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="3"
+        android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="Directorio"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Autocompletar"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Pagina2"
+            android:label="" >
+            <intent-filter>
+                <action android:name="com.andres.u.ing.autocompletar.pagina2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Pagina3"
+            android:label="" 
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="com.andres.u.ing.autocompletar.pagina3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Splash"
+            android:label="Directorio"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Busqueda"
+            android:label="Búsqueda"
+            android:theme="@android:style/Theme.Dialog" >
+            <intent-filter>
+                <action android:name="com.andres.u.ing.autocompletar.conoce" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.PaginaDidier"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.PaginaErnesto"
+            android:label="" >
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.ViewActivity"
+            android:label="Alcaldía" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.Hipoteca"
+            android:label="Alcaldía" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        
+        <activity
+            android:name="com.andres.u.ing.autocompletar.HipotecaFormulario"
+            android:label="@string/title_activity_hipoteca_formulario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.WebView1"
+            android:label="Alcaldía" >
+        </activity>
+       
+        <receiver android:name="com.andres.u.ing.autocompletar.Conectividad">
+  		  <intent-filter>
+   		     <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+   		 </intent-filter>
+		</receiver>
+        
+    </application>
+
+</manifest>
