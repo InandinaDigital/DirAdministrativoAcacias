@@ -106,7 +106,7 @@ public class Pagina3 extends ActionBarActivity implements OnClickListener {
 	      
 	      
 	      
-	      bd = getIntent().getExtras();
+//	      bd = getIntent().getExtras();
 	      
 	         nombre1 = bd.getString("nombre");
 			 secretaria1 = bd.getString("secretaria");
@@ -232,9 +232,7 @@ public class Pagina3 extends ActionBarActivity implements OnClickListener {
 	public void onClick(View v) {
 		// TODO Auto-generated method stub
 		
-		Intent i = new Intent(this, PaginaDidier.class);
-		startActivity(i);
-		finish();
+		
 		
 	}
 	

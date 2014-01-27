@@ -348,14 +348,7 @@ public class Autocompletar extends Activity implements OnClickListener,OnChildCl
 				startActivity(i);
 		    	}
 			
-			if(groupPosition == 0 && childPosition == 1){
-				Intent i = new Intent(this,PaginaDidier.class);
-				startActivity(i);
-		    	}
-			if(groupPosition == 0 && childPosition == 2){
-				Intent i = new Intent(this,PaginaErnesto.class);   
-				startActivity(i);
-		    	}
+			
 			
 			return false;
 		}
