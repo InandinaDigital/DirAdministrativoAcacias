@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="gov.co.acaciasmeta.directorioacacias"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="18" />
+    
+        <uses-permission android:name="android.permission.INTERNET" />
+        <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar" >
+        <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+        <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.Pagina3"
+            android:label="" 
+            android:screenOrientation="sensorPortrait">
+            <intent-filter>
+                <action android:name="gov.co.acaciasmeta.directorioacacias.pagina3" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.Splash"
+            android:label="Directorio"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+         
+          <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.ViewActivity"
+            android:label="Alcaldía" 
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+          
+           <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.Hipoteca"
+            android:label="Alcaldía" >
+            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            
+        </activity>
+        
+           
+            <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.HipotecaFormulario"
+            android:label="@string/title_activity_hipoteca_formulario"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.andres.u.ing.autocompletar.WebView1"
+            android:label="Alcaldía" >
+        </activity>
+         
+        
+        <activity
+            android:name="gov.co.acaciasmeta.directorioacacias.WebView1"
+            android:label="Alcaldía" >
+        </activity>
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <string name="app_name">Autocompletar</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_pagina2">Pagina2</string>
+    <string name="title_activity_pagina3">Pagina3</string>
+    <string name="title_activity_splash">Splash</string>
+    <string name="title_activity_conoce">Conoce</string>
+    <string name="title_activity_pagina_didier">PaginaDidier</string>
+    <string name="title_activity_pagina_ernesto">PaginaErnesto</string>
+    <string name="title_activity_view">ViewActivity</string>
+    <string name="drawer_layout">Hola</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut nisi a ligula porta fringilla eget vitae tellus. Mauris at nisi sed nisi dictum commodo. Fusce mauris purus, aliquet sit amet suscipit eget, scelerisque quis quam. Proin vulputate, lectus eu molestie accumsan, nunc nunc ornare metus, eu tristique eros sem quis nunc. Nam vitae lorem mi. Nulla vitae tempor dolor. Nulla convallis nisl a mi porttitor a tempor tortor aliquet.</string>
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="lista_vacia">Sin Datos</string>
+    <string name="title_activity_hipoteca_formulario">HipotecaFormulario</string>
+    <string name="label_nombre_hipoteca">Nombres:</string>
+    <string name="label_condiciones">Apellidos:</string>
+    <string name="label_contacto">Secretaría:</string>
+    <string name="label_telefono">Teléfono:</string>
+    <string name="label_email">E-Mail:</string>
+    <string name="label_observaciones">Observaciones:</string>
+    <string name="menu_crear">Nuevo</string>
+    <string name="boton_cancelar">Cancelar</string>
+    <string name="boton_guardar">Guardar</string>
+    <string name="hipoteca_crear_titulo">Nueva Hipoteca</string>
+    <string name="hipoteca_crear_confirmacion">Hipoteca creada</string>
+    <string name="menu_guardar">Guardar</string>
+    <string name="menu_cancelar">Cancelar</string>
+    <string name="menu_eliminar">Eliminar</string>
+    <string name="hipoteca_eliminar_titulo">Eliminar Hipoteca</string>
+    <string name="hipoteca_eliminar_mensaje">¿Seguro que desea eliminar la Hipoteca?</string>
+    <string name="hipoteca_eliminar_confirmacion">Hipoteca eliminada</string>
+    <string name="hipoteca_editar_titulo">Editar Hipoteca</string>
+    <string name="hipoteca_editar_confirmacion">Hipoteca modificada</string>
+    <string name="menu_editar">Editar</string>
+    <string name="menu_visualizar">Ver</string>
+    
+     <string name="live_test_description">Enable or disable your device connections to display connectivity changes
+        (notifications are not immediate, please wait)
+    </string>
+    
+     <color name="textForeground">#e0e0e0</color>
+
+    <!-- Nav Drawer Menu Items -->
+    <string-array name="nav_drawer_items">
+        <item>Siguenos en</item>
+        <item>Facebook</item>
+        <item>Twitter</item>
+        <item>Youtube</item>
+    </string-array>
+
+    <!-- Nav Drawer List Item Icons -->
+    <!-- Keep them in order as the titles are in -->
+    <array name="nav_drawer_icons">
+        <item>@drawable/youtube_icon</item>
+    </array>
+
+    <!-- Content Description -->
+    <string name="desc_list_item_icon">Item Icon</string>
+    <string name="title_activity_hipoteca">Hipoteca</string>
+    <string name="title_activity_hipoteca_formulario">HipotecaFormulario</string>
+    <string name="title_activity_web_view">WebView</string>
+    <string-array name="titulo">
+        <item >Seleccione una opción</item>
+        <item>Nombre</item>
+        <item>Cargo</item>
+        <item>Secretaria</item>
+        
+    </string-array>
+    <string name="titulosp"/>
+    <string name="directorio">DIRECTORIO ALCALDÍA DE ACACÍAS</string>
+    <string name="secretarias">SECRETARÍAS   AQUÍ</string>
+    <string name="buscarpor">Buscar por:</string>
+    <string name="coincidencias">No se encontraron coincidencias</string>
+    <string name="nom_secretaria">Secretaría</string>
+    <string name="oficina">Oficina</string>
+    <string name="direccion">Dirección</string>
+    <string name="cargo">Cargo</string>
+    <string name="profesion">Profesión</string>
+    <string name="des_cargo">Descripción del Cargo</string>
+    <string name="modalidad">Modalidad</string>
+    <string name="trami_servi">Trámites o Servicios</string>
+    <string name="email">E-mail</string>
+    <string name="twitter">Twitter</string>
+    <string name="facebook">Facebook</string>
+    <string name="youtube">Youtube</string>
+    <string name="pa_web">Página Web</string>
+    <string name="celular">Celular</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="te_fijo">Teléfono Fijo</string>
+    <string name="extension">Extensión</string>
+    <string name="linea">Línea</string>
+    <string name="aten_publi">Atención al Público</string>
+    <string name="ho_atencion">Horario de Atención</string>
+    <string name="jefe">Jefe Inmediato</string>
+    <string name="correo_jefe">Correo Jefe Inmediato</string>
+    <string name="pqr">Enlace a PQR del Sitio Web</string>
+    <string name="chat">Enlace a Chat del Sitio Web</string>
+
+</resources>
