@@ -4152,12 +4152,31 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 				break;
 
 			case 1:
-
+                
 				v = inflater.inflate(R.layout.paginatres, null);
-				ExpandableListView elv = (ExpandableListView) v
-						.findViewById(R.id.exl);
+			    final ExpandableListView elv = (ExpandableListView) v
+						.findViewById(R.id.expandableListView1);
 				elv.setAdapter(new Adaptador(ViewActivity.this));
 				elv.setOnChildClickListener(ViewActivity.this);
+				
+				TextView t = (TextView) v.findViewById(R.id.tvAdminis);
+				TextView t2 = (TextView) v.findViewById(R.id.tvFomen);
+				t2.setOnClickListener(new OnClickListener() {
+					
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						elv.setVisibility(View.GONE);
+					}
+				});
+				t.setOnClickListener(new OnClickListener() {
+					
+					@Override
+					public void onClick(View v) {
+						// TODO Auto-generated method stub
+						elv.setVisibility(View.VISIBLE);
+					}
+				});
 
 				break;
 

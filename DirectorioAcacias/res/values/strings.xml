@@ -100,5 +100,16 @@
     <string name="correo_jefe">Correo Jefe Inmediato</string>
     <string name="pqr">Enlace a PQR del Sitio Web</string>
     <string name="chat">Enlace a Chat del Sitio Web</string>
+    <string name="administrativa">Administrativa y Financiera</string>
+    <string name="fomento">Fomento</string>
+    <string name="infraestructura">Infraestructura</string>
+    <string name="educacion">Educación</string>
+    <string name="despacho">Despacho</string>
+    <string name="planeacion">Planeación</string>
+    <string name="gobierno">Gobierno</string>
+    <string name="contratacion">Contratación</string>
+    <string name="proteccion">Protección</string>
+    <string name="juridica">Jurídica</string>
+    <string name="salud">Salud</string>
 
 </resources>
