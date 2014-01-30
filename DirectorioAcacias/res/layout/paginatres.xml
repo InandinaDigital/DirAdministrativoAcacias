@@ -3,217 +3,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical" 
-    android:background="@drawable/fondo_app_cont">
+    android:background="@drawable/fondo_app_cont"
+    android:gravity="top|fill_horizontal">
     
-    
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30dp"
-        android:orientation="vertical" >
 
-        <TextView
-            android:id="@+id/tvSecretaria"
-            android:layout_width="fill_parent"
+    
+    <TextView 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Así es"
+        android:textSize="25sp"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:id="@+id/tvAsi"/>
+
+    <SlidingDrawer
+        android:id="@+id/slidingDrawer1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:content="@+id/content"
+        android:handle="@+id/handle" 
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/handle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
             android:text="@string/secretarias"
-            android:textColor="#FF6A00"
-            android:textSize="25sp"
-            android:textStyle="bold" />
-      </LinearLayout>
+             />
 
-    <ScrollView 
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:scrollbars="none"
-        android:fadeScrollbars="true"
-        >
-        
         <LinearLayout
+            android:id="@+id/content"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" >
-            
-            <TextView
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="start" >
+			
+            <TextView 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
                 android:text="@string/administrativa"
-                android:textSize="18sp"
-                android:id="@+id/tvAdminis"
-                android:textStyle="bold" />
+                android:id="@+id/tvTexto"
+                android:textSize="25sp"
+                />
 
-            <ExpandableListView
-                android:id="@+id/expandableListView1"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_marginLeft="25dp"
-                android:visibility="gone" >
-            </ExpandableListView>  
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/fomento"
-                android:textSize="18sp"
-                android:textStyle="bold"
-                android:id="@+id/tvFomen" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/infraestructura"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView3"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/educacion"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView4"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/despacho"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/planeacion"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/gobierno"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView7"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/contratacion"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView8"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/proteccion"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView9"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/juridica"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-            
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="15dp"
-                android:text="@string/salud"
-                android:textSize="18sp"
-                android:textStyle="bold" />
-
-            <ExpandableListView
-                android:id="@+id/expandableListView11"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="25dp" >
-            </ExpandableListView>
-            
-            </LinearLayout>
-         </ScrollView>   
-         
+        </LinearLayout>
+    </SlidingDrawer>
+    
+    
 </LinearLayout>
