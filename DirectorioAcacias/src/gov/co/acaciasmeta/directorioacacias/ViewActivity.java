@@ -32,6 +32,7 @@ import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
+import android.widget.ArrayAdapter;
 import android.widget.BaseExpandableListAdapter;
 import android.widget.Button;
 import android.widget.ExpandableListView;
@@ -4122,7 +4123,6 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 
 			LayoutInflater inflater = (LayoutInflater) container.getContext()
 					.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-	
 			View v = null;
 			switch (position) {
 
@@ -4159,58 +4159,74 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 			case 1:
                 
 				v = inflater.inflate(R.layout.paginatres, null);
+
+			    final SlidingDrawer sd = (SlidingDrawer) v.findViewById(R.id.slidingDrawer1);
+			    final Button btA = (Button) v.findViewById(R.id.handle);
+			    final TextView tv1 = (TextView) v.findViewById(R.id.tvAsi);
+			    final TextView tv2 = (TextView) v.findViewById(R.id.tvTexto);
+			    final ListView lv = (ListView) v.findViewById(R.id.lvLista);
+			    String datos[] = {"Administrativa y Financiera", "Fomento", "Despacho", "Gobierno", "Salud", "Contratación", "Infraestructura", "Jurídica", "Educación"};
+			    ArrayAdapter <String> adapter = new ArrayAdapter<String>(ViewActivity.this, android.R.layout.simple_list_item_1, datos);
+			    lv.setAdapter(adapter);    
 			    
-				final SlidingDrawer sd = (SlidingDrawer) v.findViewById(R.id.slidingDrawer1);
-				final Button btA = (Button) v.findViewById(R.id.handle);
-				final TextView  tg= (TextView) v.findViewById(R.id.tvTexto);
-				final TextView  tg2= (TextView) v.findViewById(R.id.tvAsi);
+			    
+			    lv.setOnItemClickListener(new OnItemClickListener() {
+		            @Override
+		            public void onItemClick(AdapterView<?> parent, View v, int posicion, long id) {
+		               if(posicion == 1){
+		            	   tv1.setVisibility(View.VISIBLE);
+		            	   sd.close();
+		               }
+		            }
+		        });
+			   
+			    
+			   btA.setOnClickListener(new OnClickListener() {
 				
-				
-				tg.setOnClickListener(new OnClickListener() {
-					
-					@Override
-					public void onClick(View v) {
-						// TODO Auto-generated method stub
-						tg2.setVisibility(View.VISIBLE);
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					if(btA.getText().toString().equals("Cerrar")){
 						sd.close();
-					}
-				});
-				
-				
-				btA.setOnClickListener(new OnClickListener() {
-					
-					@Override
-					public void onClick(View v) {
-						// TODO Auto-generated method stub
-						
+					}else{
 						sd.open();
-						if(btA.getText().toString().equals("Cerrar")){
-							sd.close();
-						}
-					tg2.setVisibility(View.GONE);
 					}
-				});
+				}
+			});
+			   
+			   
+			   tv2.setOnClickListener(new OnClickListener() {
 				
-				sd.setOnDrawerOpenListener(new OnDrawerOpenListener() {
+				@Override
+				public void onClick(View v) {
+					// TODO Auto-generated method stub
+					sd.close();
+					tv1.setVisibility(View.VISIBLE);
+				}
+			});
+			    
+			    
+			    sd.setOnDrawerOpenListener(new OnDrawerOpenListener() {
 					
 					@Override
 					public void onDrawerOpened() {
 						// TODO Auto-generated method stub
 						btA.setText("Cerrar");
-						
 					}
 				});
-				
-				sd.setOnDrawerCloseListener(new OnDrawerCloseListener() {
+			    
+			    sd.setOnDrawerCloseListener(new OnDrawerCloseListener() {
 					
 					@Override
 					public void onDrawerClosed() {
 						// TODO Auto-generated method stub
-						btA.setText("SECRETARÍAS AQUÍ");
+						btA.setText("Secretarías aquí");
 					}
 				});
 
 				break;
+				
+			
 
 			}
 

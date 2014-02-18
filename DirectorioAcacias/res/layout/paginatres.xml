@@ -6,16 +6,20 @@
     android:background="@drawable/fondo_app_cont"
     android:gravity="top|fill_horizontal">
     
-
+    <FrameLayout 
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+            
+        >
     
-    <TextView 
+    <TextView
+        android:id="@+id/tvAsi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Así es"
-        android:textSize="25sp"
         android:layout_gravity="center_horizontal"
-        android:visibility="gone"
-        android:id="@+id/tvAsi"/>
+        android:text="@string/admi_fina"
+        android:textSize="25sp"
+        android:visibility="gone" />
 
     <SlidingDrawer
         android:id="@+id/slidingDrawer1"
@@ -23,7 +27,8 @@
         android:layout_height="match_parent"
         android:content="@+id/content"
         android:handle="@+id/handle" 
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
 
         <Button
             android:id="@+id/handle"
@@ -37,18 +42,26 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:gravity="start" >
+            android:gravity="start" 
+            android:background="@android:color/white">
 			
             <TextView 
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/administrativa"
-                android:id="@+id/tvTexto"
+                android:id="@+id/tvTexto"     
                 android:textSize="25sp"
                 />
+           <ListView 
+               android:layout_width="match_parent"
+               android:layout_height="fill_parent"
+               android:id="@+id/lvLista"
+               
+               ></ListView>
 
         </LinearLayout>
     </SlidingDrawer>
     
+    </FrameLayout>
     
 </LinearLayout>

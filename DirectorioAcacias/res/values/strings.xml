@@ -111,5 +111,6 @@
     <string name="proteccion">Protección</string>
     <string name="juridica">Jurídica</string>
     <string name="salud">Salud</string>
+    <string name="admi_fina">Administrativa y Financiera</string>
 
 </resources>
