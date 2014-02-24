@@ -3,9 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    tools:context=".HipotecaFormulario"
-   
-    android:background="@drawable/fondo_app_cont2" >
+    tools:context=".HipotecaFormulario" >
  
    <LinearLayout
        android:layout_width="wrap_content"
@@ -23,7 +21,7 @@
            android:text="@string/label_nombre_hipoteca"
            android:textAppearance="?android:attr/textAppearanceMedium"
            android:textColor="#FF6A00"
-           android:textSize="22dp" />
+           android:textSize="22sp" />
     
        <TextView
            android:id="@+id/nombre"

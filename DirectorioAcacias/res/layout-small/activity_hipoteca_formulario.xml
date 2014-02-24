@@ -5,7 +5,7 @@
     android:layout_height="fill_parent"
     tools:context=".HipotecaFormulario"
    
-    android:background="@drawable/fondo_app_cont2" >
+    android:background="@drawable/bg" >
  
    <LinearLayout
        android:layout_width="wrap_content"

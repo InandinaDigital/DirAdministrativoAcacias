@@ -5,7 +5,7 @@
         android:layout_height="fill_parent"
         android:orientation="vertical"
         tools:context=".Hipoteca" 
-        android:background="@drawable/fondo_app_cont">
+        android:background="@drawable/bg">
 
         
         <RelativeLayout 
@@ -22,7 +22,6 @@
             android:layout_marginTop="5dp"
             android:layout_toRightOf="@+id/textView1"
             android:drawingCacheQuality="high"
-            android:popupBackground="@drawable/fondo_app_lista"
             android:prompt="@string/titulosp" />
 
         <TextView
@@ -85,7 +84,7 @@
         android:layout_height="wrap_content"
         android:text="@string/coincidencias"
         android:textColor="@android:color/white"
-        android:textSize="18dp"
+        android:textSize="18sp"
         android:textStyle="bold" />
      
 </LinearLayout>
