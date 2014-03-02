@@ -3,6 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
+    android:background="@drawable/bg"
     tools:context=".HipotecaFormulario" >
  
    <LinearLayout
@@ -10,8 +11,6 @@
        android:layout_height="wrap_content"
        android:orientation="vertical"
        android:layout_marginTop="20dp"
-       android:layout_marginLeft="60dp"
-
        android:padding="10dp" >  
  
        <TextView
@@ -28,7 +27,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:ems="10" 
-           android:textSize="22dp"
+           android:textSize="22sp"
            android:background="@android:color/transparent"
           />
     
@@ -492,15 +491,13 @@
                 android:id="@+id/boton_cancelar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/boton_cancelar"
-                android:visibility="invisible" />
+                android:text="@string/boton_cancelar"/>
 
             <Button
                 android:id="@+id/boton_guardar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/boton_guardar" 
-                android:visibility="invisible" />
+                android:text="@string/boton_guardar" />
             
            
         </LinearLayout>

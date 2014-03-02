@@ -44,7 +44,6 @@ import android.widget.SlidingDrawer;
 import android.widget.SlidingDrawer.OnDrawerCloseListener;
 import android.widget.SlidingDrawer.OnDrawerOpenListener;
 import android.widget.TextView;
-import android.widget.ViewFlipper;
 
 public class ViewActivity extends ActionBarActivity implements OnChildClickListener, OnItemClickListener {
 
@@ -103,7 +102,7 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
         
         font = Typeface.createFromAsset(getAssets(), "lauwrites.ttf");
         
-        List items = new ArrayList();
+        ArrayList<Item> items = new ArrayList<Item>();
         
         items.add(new Item("",R.drawable.facebook));
         
@@ -170,7 +169,6 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
 				finish();
 			}
 		})
@@ -179,7 +177,6 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 			
 			@Override
 			public void onClick(DialogInterface dialog, int which) {
-				// TODO Auto-generated method stub
 				
 			}
 		}).show();
@@ -4069,8 +4066,6 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 	}
 
 	private void ajutesMenu() {
-		// TODO Auto-generated method stub
-		
 		new AlertDialog.Builder(this)
 		.setTitle("Acerca")
 		.setIcon(R.drawable.marca)
@@ -4112,7 +4107,7 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 
 		@Override
 		public void finishUpdate(ViewGroup container) {
-			// TODO Auto-generated method stub
+			
 
 		}
 
@@ -4130,11 +4125,7 @@ public class ViewActivity extends ActionBarActivity implements OnChildClickListe
 
 				v = inflater.inflate(R.layout.activity_autocompletar, null);
                 //ImageView im = (ImageView) v.findViewById(R.id.imageView1);//esta es la nueva imagen
-				ViewFlipper flipper = (ViewFlipper) v
-						.findViewById(R.id.vfFlipper);
-
-				flipper.setFlipInterval(1000);
-				flipper.startFlipping();
+				
 
               
 				
