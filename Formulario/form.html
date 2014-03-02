@@ -1,0 +1,204 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="utf-8">
+<title>Aplic. Web de jQuery Mobile</title>
+<link href="css/jquery.mobile-1.0.min.css" rel="stylesheet" type="text/css"/>
+<script src="js/jquery-1.6.4.min.js" type="text/javascript"></script>
+<script src="js/jquery.mobile-1.0.min.js" type="text/javascript"></script>
+
+<style type="text/css">
+
+		[required]{
+
+			border-color: green;
+			
+
+		}
+		:invalid{
+			border-color: red;
+			
+		}
+
+	</style>
+
+
+</head> 
+<body> 
+
+<div data-role="page" id="page">
+	<div data-role="header" >
+		<h1>Directorio Alcaldía de Acacías</h1>
+	</div>
+	<div data-role="content">	
+		<form action="" method="get">
+            	
+                <h3>Datos Personales</h3>
+            	
+            		<div data-role="fieldcontain">
+            		
+            	    	<label for="nombres">Nombres</label>
+            	    	<input type="text" id="nombres" name="nombres" required>
+                        
+                        <label for="apellidos">Apellidos</label>
+            	    	<input type="text" id="apellidos" name="apellidos" required>
+                        
+                        <label for="fecha_ingre">Fecha de Ingreso</label>
+            	    	<input type="date" id="fecha_ingre" name="fecha_ingre" >
+                        
+                        <label for="cargo">Cargo</label>
+            	    	<input type="text" id="cargo" name="cargo" required>
+            	    	
+                        
+                        <label for="profesion">Profesión</label>
+            	    	<input type="text" id="profesion" name="profesion" >
+                        
+                        <label for="funcion">Función</label>
+            	    	<input type="text" id="funcion" name="funcion" >
+                        
+                        <label for="trami_servi">Trámite o Servicio</label>
+                        <input type="text" id="trami_servi" name="trami_servi">
+                        <br>
+                        <label for="modalidad">Modalidad de Contrato</label>
+                        <input type="text" id="modalidad" name="modalidad">
+                        
+                        <br>
+            	    	<label for="email">Email</label>
+            	    	<input type="email" id="email" name="email" placeholder="usuario@dominio.com">
+                        <br>
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular" name="celular">
+                        
+                        <br>
+                        <label for="etiqueta">Etiqueta interna de Búsqueda</label>                       <input type="text" id="etiqueta" name="etiqueta">
+                        
+                        <br>
+                        <label for="hor_aten">Horario de Atención</label>
+                        <input type="text" id="hor_aten" name="hor_aten">                        
+                        <br>
+                        <label for="aten_publi">Atención al Público</label>
+                      
+            	    	<select id="aten_publi" name="aten_publi">
+            	    			<option>Si</option>
+            	    			<option>No</option>	
+            	    	</select>
+ 
+            	    	
+            	     </fieldset>
+	
+
+					</div>
+					
+					
+                    <a href="#pagina2" data-role="button" data-theme="e">Siguiente</a>
+                  
+					
+            	
+                </form>
+            	
+	</div>
+	<div data-role="footer">
+		<h4>Acacías &copy; 2014</h4>
+	</div>
+</div>
+
+<div data-role="page" id="pagina2" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Directorio Alcaldía de Acacías</h1>
+	</div>
+	<div data-role="content">	
+		<form action="" method="get">
+            	
+                <h3>Datos Secretaria</h3>
+            	
+            		<div data-role="fieldcontain">
+
+                        <label for="secretaria">Secretaria</label>
+            	    	<input type="text" id="secretaria" name="secretaria" required>
+                        
+                        <label for="oficina">Oficina</label>
+            	    	<input type="text" id="oficina" name="oficina" required>
+                        
+                        <label for="direccion">Dirección Oficina</label>
+            	    	<input type="text" id="direccion" name="direccion" >
+                        
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono">
+                        
+                        <label for="extension">Extensión</label>
+                        <input type="tel" id="extension" name="extension">
+                        
+                        <label for="linea">Línea</label>
+                        <input type="tel" id="linea" name="linea">
+                        
+ 
+            	    	
+            	     </fieldset>
+	
+
+					</div>
+					
+					
+					<a href="#pagina3" data-role="button" data-theme="e">Siguiente</a>					
+            	
+                </form>
+            	
+	</div>
+	<div data-role="footer">
+		<h4>Acacías &copy; 2014</h4>
+	</div>
+</div>  
+
+fdgfd
+
+
+
+<div data-role="page" id="pagina3" data-add-back-btn="true">
+	<div data-role="header">
+		<h1>Directorio Alcaldía de Acacías</h1>
+	</div>
+	<div data-role="content">	
+		<form action="" method="get">
+            	
+                <h3>Social</h3>
+            	
+            		<div data-role="fieldcontain">
+                        
+                        <label for="whatsapp">WhatsApp</label>
+                        <input type="tel" id="whatsapp" name="whatsapp">
+                        
+                        <label for="twitter">Twitter</label>
+                        <input type="email" id="twitter" name="twitter">
+                        
+                        <label for="facebook">Facebook</label>
+                        <input type="text" id="facebook" name="facebook">
+            	    	
+                        <label for="youtube">Youtube</label>
+                        <input type="text" id="youtube" name="youtube">
+                        
+                        <label for="web">Página Web</label>
+                        <input type="text" id="web" name="web">
+                      
+            	     </fieldset>
+	
+
+					</div>
+					
+					
+					<input type="submit" value="Enviar"/>
+					
+            	
+                </form>
+            	
+	</div>
+	<div data-role="footer">
+		<h4>Acacías &copy; 2014</h4>
+	</div>
+</div>
+
+
+
+
+
+</body>
+</html>
