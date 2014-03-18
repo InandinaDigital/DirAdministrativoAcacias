@@ -80,9 +80,10 @@ public class Hipoteca extends ListActivity implements OnClickListener{
        buTodos = (Button) findViewById(R.id.todos);
        txtPalabraBus=(EditText)findViewById(R.id.palabra);
        sp = (Spinner) findViewById(R.id.spinner1);
+       
        String valores[] = {"Selecciona una opcíon","Nombre","Cargo","Secretaria","Servicio y/o Trámite"};
        sp.setAdapter(new ArrayAdapter<String>(this, R.layout.textview_spinner, valores));
-       
+       sp.setSelection(getIntent().getIntExtra("numLista", 0));
        dbAdapter = new HipotecaDbAdapter(this);
        dbAdapter.abrir();
         

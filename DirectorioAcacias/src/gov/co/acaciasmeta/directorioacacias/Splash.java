@@ -1,5 +1,7 @@
 package gov.co.acaciasmeta.directorioacacias;
 
+import gov.co.acaciasmeta.bd.baseDatos;
+
 import java.io.IOException;
 
 
@@ -14,6 +16,7 @@ import org.json.JSONException;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.database.Cursor;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Bundle;
@@ -33,7 +36,7 @@ import android.widget.Toast;
 public class Splash extends Activity {
 	public static final int segundos = 2000;		//Tiempo que dura la Actividad en mostrarse
 	private static final String TAG = "Splash";		//Etiqueta de depuracion
-	private String URL="192.168.0.15";				//URL de la pagina donde se alojara la Base de datos
+	private String URL="192.168.0.23";				//URL de la pagina donde se alojara la Base de datos
 	private String data;							//Variable que guarda la respuesta de la Base de datos
 	
 	@Override
@@ -45,10 +48,11 @@ public class Splash extends Activity {
 		setContentView(R.layout.activity_splash);
 		Log.i(TAG, "Ingresando al Splash");			//Prueba de depuracion que la funcion se ejecuto correctamente
 		StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build(); //Permite ejecutar la Actividad en versiones mayores a 3
-        StrictMode.setThreadPolicy(policy); 
+        StrictMode.setThreadPolicy(policy);    
+        isOnline();									//Probar si tiene Internet
 		Handler handler = new Handler();			//Creacion de un hilo de ejecucion
 		handler.postDelayed(iniciar(), segundos);	//Tiempo de ejecucion del hilo
-//		isOnline();									//Probar si tiene Internet
+		
 	}
 	/**
 	 * isOnline
@@ -68,13 +72,22 @@ public class Splash extends Activity {
 	}
 	
 	
-	
+	/**
+	 * cargarBD
+	 * Se encarga de consultar la Base de Datos que se encuentra en el Servidor
+	 */
 	private void cargarBD() {
 		JSONArray ja=null;
+		baseDatos bd=new baseDatos(getApplicationContext(), "directorio3");
 		try {
 			data=httpGetData("http://"+URL+"/directorio/consultarUsuario.php");
 			if(data.length()>1)
 				ja=new JSONArray(data);
+				Log.e(TAG,bd.actualizarDatosFuncionarios(ja)+"");
+				Cursor consulta=bd.consultarFuncionarios();
+				
+				consulta.moveToFirst();
+				Log.e(TAG,"Esta es la consulta"+consulta.getString(1));
 		} catch (JSONException e) {
 			e.printStackTrace();
 			Toast.makeText(getApplicationContext(), "Error recuperando la informacion del servidor, verifique su conexion a internet y vuelva a intentarlo.", Toast.LENGTH_SHORT).show();
@@ -91,6 +104,12 @@ public class Splash extends Activity {
 		
 	}
 	
+	/**
+	 * httpGetData
+	 * Toma la URL y convierte los datos que recibe en un string
+	 * @param mURL
+	 * @return
+	 */
 	public String httpGetData(String mURL) {
         String response="";
         mURL=mURL.replace(" ", "%20");
@@ -114,7 +133,12 @@ public class Splash extends Activity {
     	}
         return response;
     }  
-	
+	/**
+	 * iniciar
+	 * Creacion de un hijo que al terminar de cargar la base de datos
+	 * espera 2 segundos
+	 * @return res
+	 */
 	private Runnable iniciar(){
 		Runnable res = new Runnable(){
 			public void run(){

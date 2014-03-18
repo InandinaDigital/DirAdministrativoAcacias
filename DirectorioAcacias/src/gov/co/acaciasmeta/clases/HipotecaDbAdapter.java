@@ -1,6 +1,6 @@
 package gov.co.acaciasmeta.clases;
 
-import gov.co.acaciasmeta.bd.HipotecaDbHelper;
+import gov.co.acaciasmeta.bd.baseDatos;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
@@ -12,7 +12,7 @@ public class HipotecaDbAdapter {
    /**
     * Definimos constante con el nombre de la tabla
     */
-   public static final String C_TABLA = "HIPOTECA3" ;
+   public static final String C_TABLA = "directorio3" ;
  
    /**
     * Definimos constantes con el nombre de las columnas de la tabla
@@ -48,7 +48,7 @@ public class HipotecaDbAdapter {
    
  
    private Context contexto;
-   private HipotecaDbHelper dbHelper;
+   private baseDatos dbHelper;
    private SQLiteDatabase db;
  
    /**
@@ -63,7 +63,7 @@ public class HipotecaDbAdapter {
  
    public HipotecaDbAdapter abrir() throws SQLException
    {
-      dbHelper = new HipotecaDbHelper(contexto);
+      dbHelper = new baseDatos(contexto,"directorio3");
       db = dbHelper.getWritableDatabase();
       return this;
    }
@@ -75,7 +75,7 @@ public class HipotecaDbAdapter {
 	   Cursor salida=null;
 	 
 	 
-	 salida=db.rawQuery("SELECT * FROM HIPOTECA3 WHERE hip_etiqueta LIKE '%"+palabra+"%'", null);
+	 salida=db.rawQuery("SELECT * FROM directorio3 WHERE hip_etiqueta LIKE '%"+palabra+"%'", null);
 	 
 	 
 
@@ -94,7 +94,7 @@ public class HipotecaDbAdapter {
 	 palabra=palabra.replace('ó', 'o');
      palabra=palabra.replace('ú', 'u');
 	 
-	 salida=db.rawQuery("SELECT * FROM HIPOTECA3 WHERE hip_nombre LIKE '%"+palabra.trim()+"%'", null);
+	 salida=db.rawQuery("SELECT * FROM directorio3 WHERE hip_nombre LIKE '%"+palabra.trim()+"%' OR apellido LIKE  '%"+palabra.trim()+"%'" , null);
 	  
 
       
@@ -105,46 +105,24 @@ public class HipotecaDbAdapter {
    
    public Cursor consultarLis2(String palabra){  
 	   Cursor salida=null;
-	   
-	   
-		
-	   
-	 salida=db.rawQuery("SELECT * FROM HIPOTECA3 WHERE hip_cargo LIKE '%"+palabra.trim()+"%'", null);
-	  
-	
-
-	  // salida=c.getString(1);
-	   
-	  return salida; 
+	   salida=db.rawQuery("SELECT * FROM directorio3 WHERE hip_cargo LIKE '%"+palabra.trim()+"%'", null);
+	   // salida=c.getString(1);
+	   return salida; 
    }
    
    public Cursor consultarLis3(String palabra){
 	   Cursor salida=null;
-	   
-	   
-
-	 salida=db.rawQuery("SELECT * FROM HIPOTECA3 WHERE hip_secretaria LIKE '%"+palabra+"%'", null);
-	  
-	 
-
-	  // salida=c.getString(1);
-	   
-	  return salida; 
+	   salida=db.rawQuery("SELECT * FROM directorio3 WHERE hip_secretaria LIKE '%"+palabra+"%'", null);
+	   // salida=c.getString(1);
+	   return salida; 
    }
    
    
    public Cursor consultarLis4(String palabra){
 	   Cursor salida=null;
-	   
-	   
-
-	 salida=db.rawQuery("SELECT * FROM HIPOTECA3 WHERE hip_trami_servi LIKE '%"+palabra+"%'", null);
-	  
-	 
-
-	  // salida=c.getString(1);
-	   
-	  return salida; 
+	   salida=db.rawQuery("SELECT * FROM directorio3 WHERE hip_trami_servi LIKE '%"+palabra+"%'", null);
+	   // salida=c.getString(1);
+	   return salida; 
    }
  
  

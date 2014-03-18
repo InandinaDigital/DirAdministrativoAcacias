@@ -9,6 +9,7 @@ import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -96,6 +97,20 @@ public class HipotecaFormulario extends Activity {
       boton_guardar = (Button) findViewById(R.id.boton_guardar);
       boton_cancelar = (Button) findViewById(R.id.boton_cancelar);
        
+      
+      //Lanzamos la informacion
+      boton_guardar.setOnClickListener(new OnClickListener() {
+		
+		@Override
+		public void onClick(View v) {
+			Intent i=new Intent(getApplicationContext(), AgregarContacto.class);
+			i.putExtra("nombre", cursor.getString(cursor.getColumnIndex(HipotecaDbAdapter.C_COLUMNA_NOMBRE)));
+			i.putExtra("correo", cursor.getString(cursor.getColumnIndex(HipotecaDbAdapter.C_COLUMNA_EMAIL)));
+			i.putExtra("telefono", cursor.getString(cursor.getColumnIndex(HipotecaDbAdapter.C_COLUMNA_CELULAR)));
+			startActivity(i);
+		}
+	});
+      
       //
       // Creamos el adaptador  
       //
@@ -119,14 +134,14 @@ public class HipotecaFormulario extends Activity {
       //
       // Definimos las acciones para los dos botones
       //
-      boton_guardar.setOnClickListener(new View.OnClickListener() {
-          
-         @Override
-         public void onClick(View v)
-         {
-            guardar();
-         }
-      });
+//      boton_guardar.setOnClickListener(new View.OnClickListener() {
+//          
+//         @Override
+//         public void onClick(View v)
+//         {
+//            guardar();
+//         }
+//      });
        
       boton_cancelar.setOnClickListener(new View.OnClickListener() {
           

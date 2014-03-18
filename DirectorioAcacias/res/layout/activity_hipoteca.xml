@@ -32,8 +32,8 @@
             android:layout_alignTop="@+id/spinner1"
             android:layout_marginTop="6dp"
             android:text="@string/buscarpor"
-            android:textColor="@android:color/white"
-            android:textSize="20dp"
+            android:textSize="20sp"
+            android:textColor="#f82"
             android:textStyle="bold" />
 
     </RelativeLayout>

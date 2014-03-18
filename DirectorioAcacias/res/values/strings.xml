@@ -38,12 +38,22 @@
     <string name="hipoteca_editar_confirmacion">Hipoteca modificada</string>
     <string name="menu_editar">Editar</string>
     <string name="menu_visualizar">Ver</string>
-    
-     <string name="live_test_description">Enable or disable your device connections to display connectivity changes
-        (notifications are not immediate, please wait)
-    </string>
-    
-     <color name="textForeground">#e0e0e0</color>
+    <string name="live_test_description">Enable or disable your device connections to display connectivity changes
+        (notifications are not immediate, please wait)</string>
+	<!-- Agregar Contactos -->
+	<string name="accountSpinnerLabel">Cuenta</string>
+    <string name="contactCreationFailure">Error Creacion de contacto, mirar logs.</string>
+    <string name="contactEmailLabel">Correo Electronico</string>
+    <string name="contactNameLabel">Nombre</string>
+    <string name="contactPhoneLabel">Celular</string>
+    <string name="save">Guardar</string>
+    <string name="selectAccountLabel">Seleccion</string>
+    <string name="selectLabel">Seleccion label</string>
+    <string name="showInvisible">Mostrar contactos invisibles (Only)</string>
+    <string name="targetAccountLabel">Cuenta</string>
+    <string name="undefinedTypeLabel">(Undefined)</string>
+
+    <color name="textForeground">#e0e0e0</color>
 
     <!-- Nav Drawer Menu Items -->
     <string-array name="nav_drawer_items">
@@ -64,14 +74,15 @@
     <string name="title_activity_hipoteca">Hipoteca</string>
     <string name="title_activity_hipoteca_formulario">HipotecaFormulario</string>
     <string name="title_activity_web_view">WebView</string>
+
     <string-array name="titulo">
-        <item >Seleccione una opción</item>
+        <item>Seleccione una opción</item>
         <item>Nombre</item>
         <item>Cargo</item>
         <item>Secretaria</item>
-        
     </string-array>
-    <string name="titulosp"/>
+
+    <string name="titulosp" />
     <string name="directorio">DIRECTORIO ALCALDÍA DE ACACÍAS</string>
     <string name="secretarias">SECRETARÍAS   AQUÍ</string>
     <string name="buscarpor">Buscar por:</string>
@@ -112,5 +123,6 @@
     <string name="juridica">Jurídica</string>
     <string name="salud">Salud</string>
     <string name="admi_fina">Administrativa y Financiera</string>
+    <string name="title_activity_agregar_contacto">AgregarContacto</string>
 
 </resources>
